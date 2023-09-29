@@ -1,0 +1,17 @@
+- hosts: localhost
+  pre_tasks:
+  - name: Update Apt
+    become: true
+    apt:
+      force_apt_get: true
+      update_cache: true
+      state: present
+    tags:
+      - install
+      - core
+
+  tasks:
+    - include_tasks: tasks/core-setup.yml
+    - include_tasks: tasks/node-setup.yml
+    - include_tasks: tasks/git-setup.yml
+    - include_tasks: tasks/npm-packages.yml
