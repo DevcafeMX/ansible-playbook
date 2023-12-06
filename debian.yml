@@ -11,7 +11,7 @@
       - core
 
   tasks:
-    - include_tasks: tasks/core-setup.yml
-    - include_tasks: tasks/node-setup.yml
-    - include_tasks: tasks/git-setup.yml
-    - include_tasks: tasks/npm-packages.yml
+    - include_tasks: debian_tasks/core-setup.yml
+    - include_tasks: debian_tasks/node-setup.yml
+    - include_tasks: debian_tasks/git-setup.yml
+    - include_tasks: debian_tasks/npm-packages.yml
