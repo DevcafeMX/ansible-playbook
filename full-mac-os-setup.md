@@ -7,6 +7,7 @@ Most of the things listed in here are based on a note that I have on my Craft do
 - Sign into iCloud and enable find my (This should be done as soon as the new Mac is turned on).
 - Enable FileVault
 - Install Ansible (more details in [README.md](./README.md)).
+- Install zsh
 - Install the following Apps:
   - Install [Microsoft 365](https://www.microsoft.com/es-mx/microsoft-365/microsoft-office) and remove/opt-out from:
     - OneDrive
@@ -14,6 +15,14 @@ Most of the things listed in here are based on a note that I have on my Craft do
     - Teams
     - OneNote
     - Outlook
+  - Bartender 5
+  - Arc browser
+  - OBS
+  - Steam
+  - Things
+  - Pixelmator Pro
+  - Goodnotes 6
+  - Craft
 - Manual settings to change
   - System Preferences:
     - Accessibility > Display > Reduce Motion

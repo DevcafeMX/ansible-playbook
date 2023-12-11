@@ -1,0 +1,6 @@
+- name: "Install"
+  hosts: localhost
+  vars_files:
+    - vars/installs.yml
+  roles:
+    - role: brew
