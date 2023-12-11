@@ -1,10 +1,11 @@
+---
 - name: Install homebrew packages
   homebrew:
     name: '{{ item }}'
-    state: latest
+    state: latest # noqa: package-latest
     update_homebrew: true
   loop: '{{ homebrew_packages }}'
-  ignore_errors: true
+  ignore_errors: true # noqa: ignore-errors
   tags:
     - brew
 
@@ -16,7 +17,7 @@
   tags:
     - brew-cask
 
-- name: homebrew cleanup
+- name: Homebrew cleanup
   command: brew cleanup
   tags:
     - brew
