@@ -1,0 +1,29 @@
+homebrew_packages:
+  - git
+  - jq
+  - wget
+  - yt-dlp
+  - node
+  - redis
+  - pnpm
+  - fzf
+  - htop
+  - nmap
+  - rtx
+
+homebrew_cask_packages:
+  - 1password
+  - brave-browser
+  - discord
+  - dropbox
+  - google-chrome
+  - iterm2
+  - slack
+  - spotify
+  - vlc
+  - visual-studio-code
+  - firefox
+  - zoom
+  - rectangle
+  - alfred
+  - istat-menus
