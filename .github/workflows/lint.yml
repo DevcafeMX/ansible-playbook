@@ -2,7 +2,9 @@
 name: Lint
 'on':
   pull_request:
-    types: [opened, reopened]
+    paths:
+      - '**.yml'
+      - '**.yaml'
 
 jobs:
   lint:
