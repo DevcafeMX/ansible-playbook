@@ -1,3 +1,4 @@
+---
 - name: Install nodejs and npm
   become: true
   apt:
@@ -6,26 +7,26 @@
     - install
     - node
 
-- name: npmjs prefix
-  shell: mkdir -p ~/.local/.npm-global
+- name: Add npmjs prefix
+  shell: mkdir -p ~/.local/.npm-global # noqa: command-instead-of-shell
   tags:
     - install
     - node
 
-- name: add npmjs to path
-  shell: PATH=~/.local/.npm-global/bin:$PATH
+- name: Add npmjs to path
+  shell: PATH=~/.local/.npm-global/bin:$PATH # noqa: command-instead-of-shell
   tags:
     - install
     - node
 
-- name: npmjs global settings
-  shell: npm config set prefix '~/.local/.npm-global'
+- name: Change npmjs global settings
+  shell: npm config set prefix '~/.local/.npm-global' # noqa: command-instead-of-shell
   tags:
     - install
     - node
 
-- name: npmjs global settings export path in case I don't have dotfiles installed
-  shell: export PATH=~/.local/.npm-global/bin:$PATH
+- name: Set npmjs global settings export path in case I don't have dotfiles installed
+  shell: export PATH=~/.local/.npm-global/bin:$PATH # noqa: command-instead-of-shell
   tags:
     - install
     - node
