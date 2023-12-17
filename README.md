@@ -16,3 +16,5 @@ The playbooks in this repository configure most of the software that I use for m
 
 - https://github.com/geerlingguy/mac-dev-playbook
 - https://github.com/lukasleitsch/macos-playbook
+
+Commit signed by Trace
