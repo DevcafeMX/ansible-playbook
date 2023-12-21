@@ -6,7 +6,6 @@ homebrew_packages:
   - yt-dlp
   - node
   - redis
-  - pnpm
   - fzf
   - htop
   - nmap

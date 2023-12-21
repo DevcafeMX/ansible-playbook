@@ -5,3 +5,10 @@
     - vars/installs.yml
   roles:
     - role: brew
+    - role: postbrew
+
+
+- name: "Configuration"
+  hosts: localhost
+  roles:
+    - role: macos

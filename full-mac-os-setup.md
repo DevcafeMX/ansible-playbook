@@ -23,6 +23,8 @@ Most of the things listed in here are based on a note that I have on my Craft do
   - Pixelmator Pro
   - Goodnotes 6
   - Craft
+  - [Go](https://go.dev/)
+  - [Rust](https://www.rust-lang.org/)
 - Manual settings to change
   - System Preferences:
     - Accessibility > Display > Reduce Motion
