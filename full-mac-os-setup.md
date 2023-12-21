@@ -7,7 +7,7 @@ Most of the things listed in here are based on a note that I have on my Craft do
 - Sign into iCloud and enable find my (This should be done as soon as the new Mac is turned on).
 - Enable FileVault
 - Install Ansible (more details in [README.md](./README.md)).
-- Install zsh
+- Install [oh-my-zsh](https://ohmyz.sh/)
 - Install the following Apps:
   - Install [Microsoft 365](https://www.microsoft.com/es-mx/microsoft-365/microsoft-office) and remove/opt-out from:
     - OneDrive
