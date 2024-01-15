@@ -1,0 +1,17 @@
+- name: Hide recent apps
+  osx_defaults:
+    domain: com.apple.dock
+    key: show-recents
+    type: bool
+    value: false
+  notify:
+    - killall Dock
+
+- name: Automatically hide and show the Dock.
+  osx_defaults:
+    domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: true
+  notify:
+    - killall Dock

@@ -5,3 +5,7 @@ rules:
   line-length:
     max: 180
     level: warning
+  braces:
+    max-spaces-inside: 4
+  commas:
+    max-spaces-after: 4

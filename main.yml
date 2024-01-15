@@ -5,3 +5,16 @@
     - vars/installs.yml
   roles:
     - role: brew
+    - role: postbrew
+    - role: geerlingguy.mac.mas
+      when: mas_installed_apps|length > 0
+      tags:
+        - mas
+
+
+- name: "Configuration"
+  hosts: localhost
+  roles:
+    - role: macos
+      tags:
+        - macos
