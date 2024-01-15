@@ -19,10 +19,6 @@ Most of the things listed in here are based on a note that I have on my Craft do
   - Arc browser
   - OBS
   - Steam
-  - Things
-  - Pixelmator Pro
-  - Goodnotes 6
-  - Craft
   - [Go](https://go.dev/)
   - [Rust](https://www.rust-lang.org/)
 - Manual settings to change
@@ -32,7 +28,8 @@ Most of the things listed in here are based on a note that I have on my Craft do
     - Keyboard > Keyboard shortcuts > Mission Control > Move left (right option + left ) and Move Right (right option + right)
   - Dock:
     - Add Applications and Downloads
-    - Turn Hiding on and Magnification on
+    - Turn Magnification on, hiding should be enabled from the ansible playbooks
+  - Unvault the auth_config files and place them in their correspondent directories.
 - Configure Tailscale
   - Set up my NAS shortcuts
   
