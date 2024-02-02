@@ -10,6 +10,7 @@ homebrew_packages:
   - htop
   - nmap
   - rtx
+  - ffmpeg
 
 homebrew_cask_packages:
   - 1password
