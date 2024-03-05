@@ -11,6 +11,7 @@ homebrew_packages:
   - nmap
   - rtx
   - ffmpeg
+  - rclone
 
 homebrew_cask_packages:
   - 1password
