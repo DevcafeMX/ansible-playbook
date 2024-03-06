@@ -27,3 +27,7 @@ These live in the 1Password Vault
 ### 1Password SSH agent config file
 
 Place this under `~/.config/1Password/ssh/agent.toml` if that doesn't work see the following for [documentation](https://developer.1password.com/docs/ssh/agent/config/#about-the-ssh-agent-config-file)
+
+## RClone
+
+The [RClone](https://rclone.org/install/) configuration contains the keys to Dropbox and my personal NAS. The same password that unlocks the Git config files is also used to decrypt this as it is part of the same vault.
