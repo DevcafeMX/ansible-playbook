@@ -1,0 +1,8 @@
+---
+- name: "Windows installation"
+  hosts: localhost
+  become: true
+  vars_files:
+    - vars/windows_installs.yml
+  roles:
+    - role: chocolate

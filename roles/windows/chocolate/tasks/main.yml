@@ -1,0 +1,9 @@
+---
+- name: Install chocolatey packages
+  win_chocolatey:
+    name: '{{ item }}'
+    state: present
+  loop: '{{ chocolatey_packages }}'
+  ignore_errors: true # noqa: ignore-errors
+  tags:
+    - chocolatey
