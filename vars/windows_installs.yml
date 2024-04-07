@@ -1,0 +1,13 @@
+---
+chocolatey_packages:
+  - 7zip.install
+  - firefox
+  - googlechrome
+  - zoom
+  - discord.install
+  - dropbox
+  - vlc
+  - obsidian
+  - 1password
+  - spotify
+  - vscode

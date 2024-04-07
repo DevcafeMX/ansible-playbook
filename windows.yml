@@ -1,0 +1,6 @@
+---
+- name: "Windows installation"
+  hosts: localhost
+
+  tasks:
+    - include_tasks: windows_playbooks/setup.yml # noqa: name[missing]
