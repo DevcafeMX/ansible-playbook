@@ -1,0 +1,9 @@
+---
+- name: Create the website folder in /var/www
+  ansible.builtin.command: sudo mkdir -p /var/www/devcafemx
+
+- name: Change ownership on the folder
+  ansible.builtin.command: sudo chown trace:trace /var/www/devcafemx
+
+- name: Set the correct permissions
+  ansible.builtin.command: sudo chmod 775 /var/www/sitename

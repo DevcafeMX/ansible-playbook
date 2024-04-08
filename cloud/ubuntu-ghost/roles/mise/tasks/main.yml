@@ -1,0 +1,6 @@
+---
+- name: Install mise
+  ansible.builtin.command: curl https://mise.run | sh
+
+- name: Activate mise
+  ansible.builtin.command: echo 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrc
