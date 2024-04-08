@@ -3,6 +3,10 @@
   ansible.builtin.apt:
     name: mysql-server
 
+- name: Install MySQL python library
+  ansible.builtin.apt:
+    name: python3-pymysql
+
 - name: Start service MySQL, if not started
   ansible.builtin.service:
     name: mysql
@@ -11,5 +15,12 @@
 - name: Update root permissions
   community.mysql.mysql_query:
     query: ALTER USER 'root'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY %(new_password)s;
+    login_unix_socket: /run/mysqld/mysqld.sock
     named_args:
-      new_password: helloworld
+      new_password: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          62303065356363633135616537383766396133383538393730663431313934326330373631356533
+          3062613361386435383834396331326231623133613464660a666236353461393761333830373735
+          34656362653661626561636362353139376232383365393538643366653231613738326134336162
+          3861383561333862350a333365323836343933663865353131333163326131623231626633633064
+          33653162396537663466633765393565306162616639623466346134313063373464

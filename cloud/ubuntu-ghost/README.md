@@ -8,5 +8,5 @@ This is ansible playbook template for an ubuntu based server for hosting a
 You have to use the inventory file to connect to the corresponding hosts
 
 ```bash
-ansible-playbook ghost.yml -i inventory.yml
+ansible-playbook --ask-vault-pass ghost.yml -i inventory.yml
 ```
