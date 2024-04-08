@@ -1,0 +1,15 @@
+---
+- name: Install MySQL server
+  ansible.builtin.apt:
+    name: mysql-server
+
+- name: Start service MySQL, if not started
+  ansible.builtin.service:
+    name: mysql
+    state: started
+
+- name: Update root permissions
+  community.mysql.mysql_query:
+    query: ALTER USER 'root'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY %(new_password)s;
+    named_args:
+      new_password: helloworld
