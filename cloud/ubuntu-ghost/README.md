@@ -22,7 +22,7 @@ rsync --archive --chown=<user>:<user> ~/.ssh /home/<user>
 You have to use the inventory file to connect to the corresponding hosts
 
 ```bash
-ansible-playbook --ask-vault-pass ghost.yml -i inventory.yml
+ansible-playbook --ask-vault-pass ghost.yml --ask-become-pass -i inventory.yml
 ```
 
 ## What to do after?

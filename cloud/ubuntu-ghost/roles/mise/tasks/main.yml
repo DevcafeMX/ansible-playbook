@@ -1,6 +1,22 @@
 ---
+- name: Install curl
+  ansible.builtin.apt:
+    name: curl
+
 - name: Install mise
-  ansible.builtin.command: curl https://mise.run | sh
+  ansible.builtin.shell: curl https://mise.run | sh
+  args:
+    warn: false
+    executable: /usr/bin/bash
+
+
+- name: Add mise to the .bashrc profile
+  ansible.builtin.shell: echo 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrc
+  args:
+    executable: /usr/bin/bash
+
 
 - name: Activate mise
-  ansible.builtin.command: echo 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrc
+  ansible.builtin.shell: source ~/.bashrc
+  args:
+    executable: /usr/bin/bash

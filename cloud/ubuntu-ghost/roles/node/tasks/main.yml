@@ -1,9 +1,7 @@
 ---
-- name: Install NodeJS using mise
-  ansible.builtin.command: mise install node@20.11.1
-
-- name: Enable NodeJS globally using mise
-  ansible.builtin.command: mise use node@20.11.1
-
 - name: Install Ghost CLI via npm
-  ansible.builtin.command: sudo npm install ghost-cli@latest -g
+  ansible.builtin.shell: sudo npm install ghost-cli@latest -g
+  args:
+    executable: /usr/bin/bash
+  tags:
+    - node

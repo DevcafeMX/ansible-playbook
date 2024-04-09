@@ -1,6 +1,6 @@
 ---
 - name: Install Ghost and the required dependencies
-  hosts: all
+  hosts: localhost
   remote_user: trace
   become: yes
   become_method: sudo
