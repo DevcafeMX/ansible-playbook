@@ -20,9 +20,8 @@
 - name: Install certificate dependencies
   ansible.builtin.apt:
     pkg:
-    - ca-certificates
-    - curl
-    - gnupg
+      - ca-certificates
+      - curl
+      - gnupg
   tags:
     - common
-  

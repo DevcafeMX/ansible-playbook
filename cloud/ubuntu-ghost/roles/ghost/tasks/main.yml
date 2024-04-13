@@ -3,7 +3,7 @@
   ansible.builtin.shell: sudo mkdir -p /var/www/devcafemx
   args:
     executable: /usr/bin/bash
-  tags: 
+  tags:
     - ghost
 
 - name: Change ownership on the folder
