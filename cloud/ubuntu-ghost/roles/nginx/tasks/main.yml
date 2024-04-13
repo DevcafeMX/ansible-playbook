@@ -2,3 +2,5 @@
 - name: Install nginx
   ansible.builtin.apt:
     name: nginx
+  tags:
+    - nginx

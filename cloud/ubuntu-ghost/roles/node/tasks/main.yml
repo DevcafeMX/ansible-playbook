@@ -1,4 +1,17 @@
 ---
+# How to update this when needed
+# https://github.com/nodesource/distributions/blob/master/README.md#debian-and-ubuntu-based-distributions
+- name: Download NodeJS setup
+  ansible.builtin.shell: curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+  tags:
+    - node
+
+- name: Install NodeJS
+  ansible.builtin.apt:
+    name: nodejs
+  tags:
+    - node
+
 - name: Install Ghost CLI via npm
   ansible.builtin.shell: sudo npm install ghost-cli@latest -g
   args:
