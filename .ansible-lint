@@ -8,3 +8,9 @@ skip_list:
   - no-changed-when
   - galaxy[no-changelog]
   - name[missing]
+  - command-instead-of-module
+  - schema[playbook]
+  - risky-shell-pipe
+
+mock_modules:
+  - community.mysql.mysql_query

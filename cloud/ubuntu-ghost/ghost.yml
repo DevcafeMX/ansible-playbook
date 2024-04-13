@@ -1,0 +1,13 @@
+---
+- name: Install Ghost and the required dependencies
+  hosts: hetzner
+  remote_user: trace
+  become: yes
+  become_method: sudo
+
+  roles:
+    - common
+    - nginx
+    - mysql
+    - node
+    - ghost
