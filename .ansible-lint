@@ -8,4 +8,3 @@ skip_list:
   - no-changed-when
   - galaxy[no-changelog]
   - name[missing]
-  - syntax-check[unknown-module]
