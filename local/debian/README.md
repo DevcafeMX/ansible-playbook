@@ -17,7 +17,6 @@ ansible-playbook --ask-vault-pass debian.yml --ask-become-pass
 ### After the playbooks have ran
 
 - Install the following things that can't be installed via apt
-  - [Go](https://go.dev/)
   - [Rust](https://www.rust-lang.org/)
   - [Tailscale](https://tailscale.com/)*
   - [Brave Browser](https://brave.com/)
