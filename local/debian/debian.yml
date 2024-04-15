@@ -1,0 +1,13 @@
+---
+- name: Create a debian working machine
+  hosts: localhost
+  remote_user: trace
+  become: yes
+  become_method: sudo
+  vars_files:
+    - vars/packages.yml
+
+  roles:
+    - common
+    - node
+    - zsh

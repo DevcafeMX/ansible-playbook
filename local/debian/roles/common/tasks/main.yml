@@ -1,0 +1,35 @@
+---
+- name: Perform apt update
+  ansible.builtin.apt:
+    update_cache: yes
+  tags:
+    - common
+
+- name: Update all packages to their latest version
+  ansible.builtin.apt:
+    name: "*"
+    state: latest
+  tags:
+    - common
+
+- name: Install build essentials
+  ansible.builtin.apt:
+    name: build-essential
+  tags:
+    - common
+
+- name: Install certificate dependencies
+  ansible.builtin.apt:
+    pkg:
+      - ca-certificates
+      - curl
+      - gnupg
+  tags:
+    - common
+
+- name: Install preferred software packages
+  ansible.builtin.apt:
+    name: '{{ item }}' # According to the docs this is faster
+  loop: '{{ packages }}'
+  tags:
+    - common
