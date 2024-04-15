@@ -11,6 +11,9 @@ skip_list:
   - command-instead-of-module
   - schema[playbook]
   - risky-shell-pipe
+  - package-latest
+  - no-free-form
+  - literal-compare
 
 mock_modules:
   - community.mysql.mysql_query

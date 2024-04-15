@@ -1,0 +1,14 @@
+packages:
+  - git
+  - jq
+  - wget
+  - yt-dlp
+  - fzf
+  - htop
+  - nmap
+  - ffmpeg
+  - rclone
+  - rsync
+  - imagemagick
+  - dnsutils
+  - golang
