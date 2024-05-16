@@ -8,11 +8,14 @@ homebrew_packages:
   - redis
   - fzf
   - htop
+  - btop
   - nmap
   - rtx
   - ffmpeg
   - rclone
   - imagemagick
+  - miniconda
+  - ripgrep
 
 homebrew_cask_packages:
   - 1password
