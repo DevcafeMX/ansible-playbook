@@ -5,7 +5,7 @@
     type: bool
     value: false
   notify:
-    - killall Dock
+    - killall Dock # noqa: name[casing]
 
 - name: Automatically hide and show the Dock.
   osx_defaults:
@@ -14,4 +14,4 @@
     type: bool
     value: true
   notify:
-    - killall Dock
+    - killall Dock # noqa: name[casing]
